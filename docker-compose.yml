@@ -1,0 +1,17 @@
+services:
+  web:
+    image: "YaroslavBurmehaAPP:1"
+    container_name: PythonAPP
+    ports:
+      - "5000:5000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+  redis:
+    image: "redis:alpine"
+    container_name: DbAPP
+    ports:
+      - "6379:6379"
+
