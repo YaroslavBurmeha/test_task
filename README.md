@@ -1,4 +1,4 @@
-Docker built -t YaroslavBurmehaAPP:1 .
+Docker build -t YaroslavBurmehaAPP:1 .
 
 docker-compose up -d
 
